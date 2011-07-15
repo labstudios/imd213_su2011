@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+var dog = new Object();
+
+dog.collarColor = "red";
+dog.breed = "Siberian Husky";
+dog.says = "owwooooo";
+
+dog.poo = function()
+{
+	alert("You're gonna hafta clean that up.");
+}
+
+dog.speak = function()
+{
+	alert(this.says);
+}
+
+dog.eat = function(food)
+{
+	switch(food)
+	{
+		case "steak":
+			alert("yum");
+		break;
+		case "dry":
+			alert("ok");
+		break;
+		default:
+			alert("Turns up nose");
+		break;
+	}
+}
+
+dog.speak();
+dog.poo();
+dog.eat("steak");
+dog.eat("kibbles");
+
+dog.says = "yip";
+dog.breed = "chuhuahua";
+
+dog.speak();
+
+</script>
+
+</head>
+
+<body>
+</body>
+</html>
