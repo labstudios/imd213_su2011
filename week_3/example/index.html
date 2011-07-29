@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta name="author" content="" />
+
+	<title>Tabs class Example</title>
+    
+    <style>
+        .navcontent>div{display: none;}
+        .content>div{display: none;}
+        .current {
+            color: #eeeeee;
+            background-color: #999999;
+        }
+        .active{
+            color: #808080;
+            background-color: #BAEBFE;
+        }
+    </style>
+    
+    <script type="text/javascript" src="js/moocore.js"></script>
+    <script type="text/javascript" src="js/fx.reveal.js"></script>
+    <script type="text/javascript" src="js/tabset.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    
+</head>
+
+<body>
+<div id="tabs1">
+    <div class="nav">
+        <a href="#" data-content="home">Home</a>
+        <a href="#" data-content="about">About</a>
+        <a href="#" data-content="dunno">Dunno</a>
+    </div>
+    
+    <div class="content">
+        <div class="home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum, libero eu tincidunt ultrices, sapien mi consequat metus, non laoreet sem nunc consectetur mauris. Aenean in velit a diam laoreet cursus. Duis convallis adipiscing lectus, sit amet tempus est porta id. Mauris neque sem, suscipit nec ultrices vitae, pretium et orci. Fusce interdum, metus in ullamcorper ornare, erat ante pretium dui, vitae lacinia massa purus ac elit. Vivamus sed euismod ligula. Nullam suscipit posuere diam a lobortis. Mauris facilisis, lacus sit amet mattis ultricies, tortor nibh viverra tellus, a egestas risus ipsum pulvinar diam. Proin eu risus ut nisi sagittis ultricies vitae in turpis. Nunc cursus pulvinar massa, ultrices accumsan elit aliquam vitae. Duis suscipit, eros ut varius fringilla, ipsum est mollis neque, ac luctus nulla ligula non erat. Etiam a urna sed metus tempus porta ut quis quam.</div>
+        <div class="about">Nam vulputate auctor odio, vitae dictum arcu venenatis in. Morbi vulputate arcu nisl. Ut tortor nunc, mattis vitae porta ut, adipiscing et purus. Duis consectetur, orci vitae ornare molestie, eros ligula dictum diam, in posuere velit sem vitae justo. Integer eu orci sit amet nisi lobortis vulputate. Suspendisse eu arcu magna. Vivamus nisl purus, vestibulum non viverra ac, congue eget eros. Aenean eu vestibulum purus. Sed ut metus elementum mi aliquet egestas. Aenean sed ante in tortor tristique rutrum. Phasellus facilisis dapibus porta. Praesent id orci in nisi volutpat gravida eget vitae eros. Mauris vestibulum aliquet augue sed faucibus. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</div>
+        <div class="dunno">Nam et ante diam, vitae pulvinar arcu. Aenean et arcu quam. Vivamus sit amet eros in justo tempor imperdiet. Donec et sapien erat. Proin facilisis laoreet massa, a dignissim orci sagittis vel. Morbi auctor ullamcorper porta. Praesent metus neque, eleifend a tristique vitae, pulvinar aliquet diam. Nunc sodales venenatis dui, eu lacinia libero pellentesque at. Duis nec diam eu odio iaculis dignissim vel id felis. Maecenas congue vehicula enim id tristique. Duis in erat nulla, nec cursus nisi. Mauris pulvinar vestibulum nulla at placerat.</div>
+    </div>
+</div>
+
+<div id="tabs2">
+    <ul class="nav">
+        <li href="#" data-content="home">Homer</li>
+        <li href="#" data-content="about">About</li>
+        <li href="#" data-content="dunno">Dunno</li>
+    </ul>
+    
+    <div class="navcontent">
+        <div class="home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum, libero eu tincidunt ultrices, sapien mi consequat metus, non laoreet sem nunc consectetur mauris. Aenean in velit a diam laoreet cursus. Duis convallis adipiscing lectus, sit amet tempus est porta id. Mauris neque sem, suscipit nec ultrices vitae, pretium et orci. Fusce interdum, metus in ullamcorper ornare, erat ante pretium dui, vitae lacinia massa purus ac elit. Vivamus sed euismod ligula. Nullam suscipit posuere diam a lobortis. Mauris facilisis, lacus sit amet mattis ultricies, tortor nibh viverra tellus, a egestas risus ipsum pulvinar diam. Proin eu risus ut nisi sagittis ultricies vitae in turpis. Nunc cursus pulvinar massa, ultrices accumsan elit aliquam vitae. Duis suscipit, eros ut varius fringilla, ipsum est mollis neque, ac luctus nulla ligula non erat. Etiam a urna sed metus tempus porta ut quis quam.</div>
+        <div class="about">Nam vulputate auctor odio, vitae dictum arcu venenatis in. Morbi vulputate arcu nisl. Ut tortor nunc, mattis vitae porta ut, adipiscing et purus. Duis consectetur, orci vitae ornare molestie, eros ligula dictum diam, in posuere velit sem vitae justo. Integer eu orci sit amet nisi lobortis vulputate. Suspendisse eu arcu magna. Vivamus nisl purus, vestibulum non viverra ac, congue eget eros. Aenean eu vestibulum purus. Sed ut metus elementum mi aliquet egestas. Aenean sed ante in tortor tristique rutrum. Phasellus facilisis dapibus porta. Praesent id orci in nisi volutpat gravida eget vitae eros. Mauris vestibulum aliquet augue sed faucibus. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</div>
+        <div class="dunno">Nam et ante diam, vitae pulvinar arcu. Aenean et arcu quam. Vivamus sit amet eros in justo tempor imperdiet. Donec et sapien erat. Proin facilisis laoreet massa, a dignissim orci sagittis vel. Morbi auctor ullamcorper porta. Praesent metus neque, eleifend a tristique vitae, pulvinar aliquet diam. Nunc sodales venenatis dui, eu lacinia libero pellentesque at. Duis nec diam eu odio iaculis dignissim vel id felis. Maecenas congue vehicula enim id tristique. Duis in erat nulla, nec cursus nisi. Mauris pulvinar vestibulum nulla at placerat.</div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -11,7 +11,7 @@ var MyClass = new Class({
 
 	initialize: function(element, options)
 	{
-		this.element = $(element);
+		this.element = document.id(element);
 		this.setOptions(options);
 	}
 });
