@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Bird</title>
+    <style type="text/css">
+    	/*#bird{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			background: url(images/bird.png) no-repeat;
+			background-position-y: 0px;
+			top: 30px;
+			left: 30px;
+		}*/
+		#bird2{
+			top: 59px;
+		}
+    </style>
+    <script type="text/javascript" src="js/moocore.js"></script>
+    <script type="text/javascript" src="js/animator.js"></script>
+    <script type="text/javascript">
+    	document.addEvent("domready", function(){
+    		var bird = new Animator("bird");
+    		var bird2 = new Animator("bird2", {xspeed: 7});
+    	});
+    </script>
+</head>
+
+<body>
+<div id="bird"></div>
+<div id="bird2"></div>
+</body>
+</html>

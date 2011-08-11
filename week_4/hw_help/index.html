@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>Help</title>
+		<script type="text/javascript" src="../js/moocore.js"></script>
+		<script type="text/javascript" src="js/writer.js"></script>
+		<script type="text/javascript">
+		document.addEvent("domready", function(){
+			var it1 = new Writer("item1");
+			var it2 = new Writer("item2", {out: "You have a"});
+			var it3 = new Writer("item3", {out: "great day!"});
+		});
+		
+		</script>
+	</head>
+	<body>
+	<div id="item1">
+		<input type="text" />
+		<input type="button" value="Go" />
+	</div>
+	<div id="item2">
+		<input type="text" />
+		<input type="button" value="Go" />
+	</div>
+	<div id="item3">
+		<input type="text" />
+		<input type="button" value="Go" />
+	</div>
+	</body>
+</html>
