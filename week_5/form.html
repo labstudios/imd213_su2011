@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<meta name="author" content="" />
+
+	<title>Form</title>
+    <link rel="stylesheet" href="js/formcheck/theme/classic/formcheck.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/moocore.js"></script>
+    <script type="text/javascript" src="js/fx.scroll.js"></script>
+    <script type="text/javascript" src="js/formcheck/lang/en.js"> </script>
+    <script type="text/javascript" src="js/formcheck/formcheck.js"> </script>
+    <script type="text/javascript" src="js/form.js"></script>
+</head>
+
+<body>
+<div id="resp"></div>
+<form id="music_form" enctype="multipart/form-data" method="post" action="process.php">
+<h3>Music Survey</h3>
+<div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac diam mauris. Etiam ornare pharetra elementum. Sed imperdiet nulla eu leo placerat consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ac ipsum at ligula tristique tempor non eget velit. Fusce hendrerit felis ut neque suscipit sed blandit est pulvinar. Cras pellentesque bibendum metus. Nam ultrices mattis dui, vel consequat dolor lacinia non. Maecenas vulputate justo vitae augue volutpat vulputate ac venenatis sapien. Sed vel risus felis. Vestibulum felis augue, volutpat sed gravida nec, mattis ac sapien. In eu augue turpis, vitae congue augue. Mauris dolor quam, tincidunt vel egestas at, accumsan ac nunc. Integer vitae nunc urna.</p>
+
+<p>Aenean elit risus, rhoncus sit amet eleifend sit amet, pulvinar eu leo. Mauris auctor tempus ornare. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer nec convallis tellus. Mauris erat ante, fermentum at viverra non, semper eu leo. Mauris ultrices feugiat viverra. Cras ante lectus, hendrerit sit amet lobortis in, aliquet quis nunc. Vestibulum sit amet diam ligula, lacinia posuere eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec non fringilla tortor. Etiam bibendum vestibulum enim, at convallis lacus interdum quis. Ut scelerisque vehicula leo, aliquam faucibus mauris ultrices congue. Integer ultricies faucibus dolor, nec laoreet orci porta in. Phasellus at sapien eget libero hendrerit vestibulum ac nec erat. Nunc et tellus ac dui ornare mattis dictum nec est. Fusce pharetra feugiat mi, ac elementum nunc congue in. Maecenas porta velit ut ligula pretium ac euismod est iaculis. Nam volutpat metus lectus. Sed fringilla interdum nulla, id tempus velit tempus vitae.</p>
+</div>
+How old are you?
+<select name="age" class="validate['required']">
+    <option value="">Please Select</option>
+    <option value="5">5-9</option>
+    <option value="10">10-15</option>
+    <option value="16">16-21</option>
+    <option value="22">22-30</option>
+    <option value="31">31-50</option>
+    <option value="51">51+</option>
+</select><br />
+What is your favorite genre?
+<select name="genre">
+    <option value="">Please Select</option>
+    <option value="rock">Rock</option>
+    <option value="hiphop">Hip-Hop</option>
+    <option value="other">I hate them both</option>
+</select><br />
+What is your favorite band?
+<input type="text" name="band" class="validate['required','length[2,-1]']" /><br />
+What type of MP3 player do you own?
+<input type="radio" id="ipod" name="player" value="ipod" class="validate['required']" />
+<label for="ipod">iPod</label>
+<input type="radio" id="zune" name="player" value="zune" />
+<label for="zune">Zune</label>
+<input type="radio" id="mp3" name="player" value="mp3" />
+<label for="mp3">MP3 Player</label>
+<input type="radio" id="computer" name="player" value="computer" />
+<label for="computer">I'm on my player. . .</label>
+<br />
+What kinds of ice cream do you like?
+<input id="vanilla" name="ice_cream[]" type="checkbox" value="vanilla" />
+<label for="vanilla">Vanilla</label>
+<input id="chocolate" name="ice_cream[]" type="checkbox" value="chocolate" />
+<label for="chocolate">Chocolate</label>
+<input id="strawberry" name="ice_cream[]" type="checkbox" value="strawberry" />
+<label for="strawberry">Strawberry</label><br />
+Comments:
+<textarea name="comments"></textarea>
+<br />
+<input type="submit" value="Rock On!" />
+</form>
+
+
+</body>
+</html>
